@@ -65,3 +65,6 @@ html[xmlns] .clearfix { display: block; }
   color: red;
   font-size: 18px;
 }
+#frame {
+  height:550px;
+}
