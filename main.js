@@ -1,4 +1,4 @@
-let links = ["https://pic.pimg.tw/gaeabooks/1470219983-4115526200_n.jpg",
+var links = ["https://pic.pimg.tw/gaeabooks/1470219983-4115526200_n.jpg",
 
 "http://pic.pimg.tw/bookspring/1407213783-552453531.jpg",
 
@@ -8,20 +8,20 @@ let links = ["https://pic.pimg.tw/gaeabooks/1470219983-4115526200_n.jpg",
 "http://pic.eslite.com/Upload/Product/201211/m/634889970550470928.jpg"
 ];
 
-let titles = ["春秋異聞1", "聖銀幻想曲5", "神使繪卷-番外", "妄想異聞錄-異界篇", "城隍4"];
-let index = 0
-let autoplay = true;
+var titles = ["春秋異聞1", "聖銀幻想曲5", "神使繪卷-番外", "妄想異聞錄-異界篇", "城隍4"];
+var index = 0
+var autoplay = true;
 
 function nextPic() {
   console.log("nextPic: " + index);
-  let img =   document.getElementById("pic");
+  var img =   document.getElementById("pic");
   index++;
   img.src = links[index % links.length];
 }
 
 function prevPic() {
   console.log("nextPic: " + index);
-  let img =     document.getElementById("pic");
+  var img =     document.getElementById("pic");
   index++;
   img.src = links[index % links.length];
   let title = document.getElementById("title");
